@@ -62,6 +62,18 @@ def parite_nb(n):
     
 ## Exercice 6
 
+
+def diviseurs():
+    n = int(input('Veuillez saisir un entier supérieur à 1 : '))
+    div=[]
+    for i in range(2,n+1):
+        if n%i==0:
+            if i not in div:
+                div.append(i)
+    if len(div)==1:
+        return ('Aucun ! Il est premier')        
+    return('Diviseurs propres sans répétitions de',n,':',div)
+
   
     
     
